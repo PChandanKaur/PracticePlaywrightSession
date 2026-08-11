@@ -1,0 +1,76 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: login.spec.ts >> Login Test Page
+- Location: tests\login.spec.ts:4:1
+
+# Error details
+
+```
+Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.saucedemo.com12/
+Call log:
+  - navigating to "https://www.saucedemo.com12/", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - heading "This site can’t be reached" [level=1] [ref=e7]
+    - paragraph [ref=e8]: Check if there is a typo in www.saucedemo.com12.
+    - generic [ref=e9]:
+      - paragraph
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - text: If spelling is correct,
+          - link "try running Windows Network Diagnostics" [ref=e12] [cursor=pointer]:
+            - /url: javascript:diagnoseErrors()
+          - text: .
+    - generic [ref=e13]: DNS_PROBE_FINISHED_NXDOMAIN
+  - button "Reload" [ref=e16] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1  | import{test, Locator, Page} from '@playwright/test';
+  2  | 
+  3  | export abstract class BasePage{
+  4  | 
+  5  |     readonly page: Page;
+  6  |     constructor(page: Page)
+  7  |     {
+  8  |         this.page = page;
+  9  |     }
+  10 | 
+  11 |     //Navigate to a Specific URL
+  12 |     async navigate(url: string): Promise<void>
+  13 |     {
+> 14 |         await this.page.goto(url, {waitUntil: 'load'});
+     |                         ^ Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.saucedemo.com12/
+  15 |     }
+  16 | 
+  17 |     async click(locator: Locator): Promise<void>
+  18 |     {
+  19 |         await locator.waitFor({state:'visible'});
+  20 |         await locator.click();
+  21 |     }
+  22 | 
+  23 |     async fill(locator: Locator, value:string): Promise<void>
+  24 |     {
+  25 |         await locator.waitFor({state:'visible'});
+  26 |         await locator.fill(value);
+  27 |     }
+  28 | 
+  29 |     abstract isLoaded():Promise<void>;
+  30 | }
+  31 | 
+  32 | 
+```
