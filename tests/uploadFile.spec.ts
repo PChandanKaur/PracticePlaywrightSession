@@ -6,5 +6,6 @@ test('Upload The File', async({page}) => {
     await page.getByRole('button', {name:'Choose File'}).setInputFiles('C:\\Users\\Preet\\Downloads\\some-file.txt');
     await page.getByRole('button',{name:'Upload'}).click();
 
-    await expect(page.getByRole('heading',{name:'File Uploaded!'})).toHaveText('File Uploaded!');
+    const value= await expect(page.getByRole('heading',{name:'File Uploaded!'})).toHaveText('File Uploaded!');
+    console.log(value);
 })
