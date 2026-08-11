@@ -4,7 +4,8 @@
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "tests/uploadFile.spec.ts"
+      "tests/uploadFile.spec.ts",
+      "--headed"
     ],
     "configFile": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\playwright.config.ts",
     "rootDir": "C:/Users/Preet/OneDrive/Desktop/TYPESCRIPT FUNDAMENTALS/Playwright_Practice/tests",
@@ -126,12 +127,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8666,
+                  "duration": 5808,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[90mundefined\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-11T03:34:34.277Z",
+                  "startTime": "2026-08-11T03:59:46.450Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -166,12 +171,16 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 11861,
+                  "duration": 15661,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[90mundefined\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-11T03:34:34.289Z",
+                  "startTime": "2026-08-11T03:59:46.494Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -206,12 +215,16 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 11499,
+                  "duration": 14823,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[90mundefined\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-11T03:34:34.325Z",
+                  "startTime": "2026-08-11T03:59:46.576Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -235,8 +248,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-11T03:34:32.148Z",
-    "duration": 21095.759000000002,
+    "startTime": "2026-08-11T03:59:44.310Z",
+    "duration": 22851.281,
     "expected": 3,
     "skipped": 0,
     "unexpected": 0,
