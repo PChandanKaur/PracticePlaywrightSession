@@ -4,7 +4,7 @@
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "tests/windowsHandling.spec.ts"
+      "tests/uploadFile.spec.ts"
     ],
     "configFile": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\playwright.config.ts",
     "rootDir": "C:/Users/Preet/OneDrive/Desktop/TYPESCRIPT FUNDAMENTALS/Playwright_Practice/tests",
@@ -105,14 +105,14 @@
   },
   "suites": [
     {
-      "title": "windowsHandling.spec.ts",
-      "file": "windowsHandling.spec.ts",
+      "title": "uploadFile.spec.ts",
+      "file": "uploadFile.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Handle Windows Tabs",
-          "ok": false,
+          "title": "Upload The File",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -125,83 +125,34 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 13581,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: #sampleHeading)\nExpected: \u001b[32m\"This is a sample page\"\u001b[39m\nError: Unexpected token \")\" while parsing css selector \"#sampleHeading)\". Did you mean to CSS.escape it?\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for #sampleHeading)\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: #sampleHeading)\nExpected: \u001b[32m\"This is a sample page\"\u001b[39m\nError: Unexpected token \")\" while parsing css selector \"#sampleHeading)\". Did you mean to CSS.escape it?\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for #sampleHeading)\u001b[22m\n\n    at C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts:11:54",
-                    "location": {
-                      "file": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts",
-                      "column": 54,
-                      "line": 11
-                    },
-                    "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#tabButton'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 10 |\u001b[39m     ])\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m expect(newPage\u001b[33m.\u001b[39mlocator(\u001b[32m'#sampleHeading)'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'This is a sample page'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts",
-                        "column": 54,
-                        "line": 11
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: #sampleHeading)\nExpected: \u001b[32m\"This is a sample page\"\u001b[39m\nError: Unexpected token \")\" while parsing css selector \"#sampleHeading)\". Did you mean to CSS.escape it?\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for #sampleHeading)\u001b[22m\n\n\n\u001b[0m \u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#tabButton'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 10 |\u001b[39m     ])\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m expect(newPage\u001b[33m.\u001b[39mlocator(\u001b[32m'#sampleHeading)'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'This is a sample page'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[0m\n\u001b[2m    at C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts:11:54\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 8666,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-10T02:46:32.612Z",
+                  "startTime": "2026-08-11T03:34:34.277Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-chromium\\test-failed-2.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-chromium\\video-1.webm"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-chromium\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-chromium\\error-context.md"
-                    },
-                    {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-chromium\\trace.zip"
+                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\uploadFile-Upload-The-File-chromium\\trace.zip"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts",
-                    "column": 54,
-                    "line": 11
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "192a8064ebcbd677f0ff-a2aca8486b1f75b07294",
-          "file": "windowsHandling.spec.ts",
+          "id": "297d5b67f5c101490772-86b77b0500c7d0490cbf",
+          "file": "uploadFile.spec.ts",
           "line": 3,
           "column": 1
         },
         {
-          "title": "Handle Windows Tabs",
-          "ok": false,
+          "title": "Upload The File",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -214,83 +165,34 @@
                 {
                   "workerIndex": 1,
                   "parallelIndex": 1,
-                  "status": "failed",
-                  "duration": 30412,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: #sampleHeading)\nExpected: \u001b[32m\"This is a sample page\"\u001b[39m\nError: Unexpected token \")\" while parsing css selector \"#sampleHeading)\". Did you mean to CSS.escape it?\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for #sampleHeading)\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: #sampleHeading)\nExpected: \u001b[32m\"This is a sample page\"\u001b[39m\nError: Unexpected token \")\" while parsing css selector \"#sampleHeading)\". Did you mean to CSS.escape it?\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for #sampleHeading)\u001b[22m\n\n    at C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts:11:54",
-                    "location": {
-                      "file": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts",
-                      "column": 54,
-                      "line": 11
-                    },
-                    "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#tabButton'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 10 |\u001b[39m     ])\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m expect(newPage\u001b[33m.\u001b[39mlocator(\u001b[32m'#sampleHeading)'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'This is a sample page'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts",
-                        "column": 54,
-                        "line": 11
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: #sampleHeading)\nExpected: \u001b[32m\"This is a sample page\"\u001b[39m\nError: Unexpected token \")\" while parsing css selector \"#sampleHeading)\". Did you mean to CSS.escape it?\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for #sampleHeading)\u001b[22m\n\n\n\u001b[0m \u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#tabButton'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 10 |\u001b[39m     ])\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m expect(newPage\u001b[33m.\u001b[39mlocator(\u001b[32m'#sampleHeading)'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'This is a sample page'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[0m\n\u001b[2m    at C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts:11:54\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 11861,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-10T02:46:32.614Z",
+                  "startTime": "2026-08-11T03:34:34.289Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-firefox\\test-failed-1.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-firefox\\test-failed-2.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-firefox\\video.webm"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-firefox\\video-1.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-firefox\\error-context.md"
-                    },
-                    {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-firefox\\trace.zip"
+                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\uploadFile-Upload-The-File-firefox\\trace.zip"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts",
-                    "column": 54,
-                    "line": 11
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "192a8064ebcbd677f0ff-71bc5deabc692c664151",
-          "file": "windowsHandling.spec.ts",
+          "id": "297d5b67f5c101490772-09b8cfcc9b26e9689b53",
+          "file": "uploadFile.spec.ts",
           "line": 3,
           "column": 1
         },
         {
-          "title": "Handle Windows Tabs",
-          "ok": false,
+          "title": "Upload The File",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -303,77 +205,28 @@
                 {
                   "workerIndex": 2,
                   "parallelIndex": 2,
-                  "status": "failed",
-                  "duration": 40320,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: #sampleHeading)\nExpected: \u001b[32m\"This is a sample page\"\u001b[39m\nError: Unexpected token \")\" while parsing css selector \"#sampleHeading)\". Did you mean to CSS.escape it?\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for #sampleHeading)\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: #sampleHeading)\nExpected: \u001b[32m\"This is a sample page\"\u001b[39m\nError: Unexpected token \")\" while parsing css selector \"#sampleHeading)\". Did you mean to CSS.escape it?\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for #sampleHeading)\u001b[22m\n\n    at C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts:11:54",
-                    "location": {
-                      "file": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts",
-                      "column": 54,
-                      "line": 11
-                    },
-                    "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#tabButton'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 10 |\u001b[39m     ])\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m expect(newPage\u001b[33m.\u001b[39mlocator(\u001b[32m'#sampleHeading)'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'This is a sample page'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts",
-                        "column": 54,
-                        "line": 11
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: #sampleHeading)\nExpected: \u001b[32m\"This is a sample page\"\u001b[39m\nError: Unexpected token \")\" while parsing css selector \"#sampleHeading)\". Did you mean to CSS.escape it?\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for #sampleHeading)\u001b[22m\n\n\n\u001b[0m \u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#tabButton'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 10 |\u001b[39m     ])\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m expect(newPage\u001b[33m.\u001b[39mlocator(\u001b[32m'#sampleHeading)'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'This is a sample page'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[0m\n\u001b[2m    at C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts:11:54\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 11499,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-10T02:46:32.632Z",
+                  "startTime": "2026-08-11T03:34:34.325Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-webkit\\test-failed-2.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-webkit\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-webkit\\video-1.webm"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-webkit\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-webkit\\error-context.md"
-                    },
-                    {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\windowsHandling-Handle-Windows-Tabs-webkit\\trace.zip"
+                      "path": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\test-results\\uploadFile-Upload-The-File-webkit\\trace.zip"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\Preet\\OneDrive\\Desktop\\TYPESCRIPT FUNDAMENTALS\\Playwright_Practice\\tests\\windowsHandling.spec.ts",
-                    "column": 54,
-                    "line": 11
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "192a8064ebcbd677f0ff-056875e2eaadca1f9176",
-          "file": "windowsHandling.spec.ts",
+          "id": "297d5b67f5c101490772-c637a6d1d16b382243ac",
+          "file": "uploadFile.spec.ts",
           "line": 3,
           "column": 1
         }
@@ -382,11 +235,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-10T02:46:30.424Z",
-    "duration": 44973.556000000004,
-    "expected": 0,
+    "startTime": "2026-08-11T03:34:32.148Z",
+    "duration": 21095.759000000002,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 0,
     "flaky": 0
   }
 }
